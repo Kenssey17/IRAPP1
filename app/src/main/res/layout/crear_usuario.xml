@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondocrearusuario"
+    tools:context=".CrearUsuario">
+
+    <ImageView
+        android:id="@+id/imageView23"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/iconousuario" />
+
+
+    <TextView
+        android:id="@+id/textViewRegistrarse"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:text="@string/TextViewCrearCuenta"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView23" />
+
+
+    <EditText
+        android:id="@+id/Editusuario"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edit_redondos_trasparentes"
+        android:hint="Usuario"
+        android:inputType="textCapWords|textAutoCorrect"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRegistrarse" />
+
+    <EditText
+        android:id="@+id/Editcorreo"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edit_redondos_trasparentes"
+        android:hint="Correo eléctronico"
+        android:digits="abcdefghijklmnñopqrstuvwxyz0123456789-_@."
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Editusuario" />
+
+    <EditText
+        android:id="@+id/Editcontrasena"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edit_redondos_trasparentes"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:digits="abcdefghijklmnñopqrstuvwxyABCDEFGHIJKLMNÑOPQRSTUVWXYZ0123456789"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Editcorreo" />
+
+    <EditText
+        android:id="@+id/EditconfirmarContrasena"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edit_redondos_trasparentes"
+        android:hint="Confirmar contraseña"
+        android:inputType="textPassword"
+        android:digits="abcdefghijklmnñopqrstuvwxyABCDEFGHIJKLMNÑOPQRSTUVWXYZ0123456789"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Editcontrasena" />
+
+    <ImageView
+        android:id="@+id/imageView24"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toStartOf="@+id/imageView25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EditconfirmarContrasena"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/arbolescrearusuario" />
+
+    <ImageView
+        android:id="@+id/imageView25"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="140dp"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toEndOf="@+id/imageView24"
+        app:layout_constraintTop_toBottomOf="@+id/EditconfirmarContrasena"
+        app:srcCompat="@drawable/flecha" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

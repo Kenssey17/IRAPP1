@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondoretodeldia"
+    tools:context=".RetoDelDia">
+
+    <ImageView
+        android:id="@+id/imageAscensorBarra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/barranegra" />
+
+    <ImageView
+        android:id="@+id/imageAscensorPerfil"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="300dp"
+        android:layout_marginBottom="42dp"
+        android:onClick="iniciarSesion"
+        app:layout_constraintBottom_toBottomOf="@+id/imageAscensorBarra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageAscensorBarra"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/login"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+    <ImageView
+        android:id="@+id/imageAscensorChat"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="contactenos"
+        app:layout_constraintStart_toEndOf="@+id/imageAscensorPerfil"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mensaje"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="miEspacio"
+        app:layout_constraintEnd_toStartOf="@+id/imageRetoAscensor"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageAscensorChat"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/estrella"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/imageRetoDia"
+        android:layout_width="162dp"
+        android:layout_height="157dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="76dp"
+        android:onClick="diarioCampo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageAscensorBarra"
+        app:srcCompat="@drawable/retodeldia"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/imageRetoEventos"
+        android:layout_width="162dp"
+        android:layout_height="157dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="124dp"
+        android:onClick="construccion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageRetoDia"
+        app:srcCompat="@drawable/eventos"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/imageRetoJuega"
+        android:layout_width="162dp"
+        android:layout_height="157dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="construccion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintStart_toEndOf="@+id/imageRetoDia"
+        app:layout_constraintTop_toBottomOf="@+id/imageAscensorBarra"
+        app:srcCompat="@drawable/juega"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:layout_width="162dp"
+        android:layout_height="157dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="124dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="noticias"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintStart_toEndOf="@+id/imageRetoEventos"
+        app:layout_constraintTop_toTopOf="@+id/imageRetoJuega"
+        app:srcCompat="@drawable/noticias"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/imageRetoAscensor"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="304dp"
+        android:layout_marginTop="63dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="45dp"
+        android:onClick="ascensor"
+        app:layout_constraintBottom_toBottomOf="@+id/imageAscensorBarra"
+        app:layout_constraintEnd_toEndOf="@+id/imageAscensorBarra"
+        app:layout_constraintStart_toStartOf="@+id/imageAscensorBarra"
+        app:layout_constraintTop_toTopOf="@+id/imageAscensorBarra"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/tres_lineas"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

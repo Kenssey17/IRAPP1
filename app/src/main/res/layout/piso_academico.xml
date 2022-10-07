@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PisoAcademico">
+
+    <ImageView
+        android:id="@+id/imageAcademicoBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/fondocrearusuario" />
+
+    <ImageView
+        android:id="@+id/imageAcademicoFondo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageAcademicoBack"
+        app:layout_constraintVertical_bias="0.75"
+        app:srcCompat="@drawable/fondopisoacademico" />
+
+    <ImageView
+        android:id="@+id/imageAscensorBarra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/barranegra" />
+
+    <ImageView
+        android:id="@+id/imageAscensorPerfil"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="300dp"
+        android:onClick="iniciarSesion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/login"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/imageAscensorChat"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="230dp"
+        android:onClick="contactenos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.436"
+        app:layout_constraintStart_toStartOf="@+id/imageAscensorPerfil"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mensaje"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="110dp"
+        android:onClick="miEspacio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="@+id/imageAscensorBarra"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/estrella"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/imageAscensorMenu"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="12dp"
+        android:onClick="ascensor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tres_lineas"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/imageAcadeItem1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="150dp"
+        android:background="@color/trasparente"
+        android:onClick="construccion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageAcademicoFondo"
+        app:srcCompat="@drawable/sena"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/imageAcadeItem2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="120dp"
+        android:background="@color/trasparente"
+        android:onClick="construccion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageAcademicoFondo"
+        app:srcCompat="@drawable/corporacionnacional"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="150dp"
+        android:background="@color/trasparente"
+        android:onClick="construccion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageAcadeItem1"
+        app:srcCompat="@drawable/colegios"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="25dp"
+        android:onClick="construccion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageAcadeItem2"
+        app:srcCompat="@drawable/colegios"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

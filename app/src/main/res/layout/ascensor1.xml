@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondoascensor"
+    tools:context=".Ascensor1">
+
+
+    <ImageView
+        android:id="@+id/imageAscensorBarra2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/barranegra" />
+
+    <ImageView
+        android:id="@+id/imageAscensorPerfil"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginBottom="39dp"
+        android:onClick="iniciarSesion"
+        app:layout_constraintBottom_toBottomOf="@+id/imageAscensorBarra2"
+        app:layout_constraintStart_toStartOf="@+id/imageAscensorBarra2"
+        app:layout_constraintTop_toTopOf="@+id/imageAscensorBarra2"
+        app:srcCompat="@drawable/login"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/imageAscensorChat"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="40dp"
+        android:onClick="contactenos"
+        app:layout_constraintBottom_toBottomOf="@+id/imageAscensorBarra2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageAscensorPerfil"
+        app:layout_constraintTop_toTopOf="@+id/imageAscensorBarra2"
+        app:srcCompat="@drawable/mensaje"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginBottom="40dp"
+        android:onClick="miEspacio"
+        app:layout_constraintBottom_toBottomOf="@+id/imageAscensorBarra2"
+        app:layout_constraintEnd_toStartOf="@+id/imageAscensorMenu"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageAscensorChat"
+        app:layout_constraintTop_toTopOf="@+id/imageAscensorBarra2"
+        app:srcCompat="@drawable/estrella"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/imageAscensorPlegable"
+        android:layout_width="249dp"
+        android:layout_height="498dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.083"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageAscensorBarra2"
+        app:layout_constraintVertical_bias="0.047"
+        app:srcCompat="@drawable/ascensor" />
+
+    <ImageView
+        android:id="@+id/imageAscensorMenu"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="304dp"
+        android:layout_marginTop="63dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="45dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageAscensorBarra2"
+        app:layout_constraintEnd_toEndOf="@+id/imageAscensorBarra2"
+        app:layout_constraintStart_toStartOf="@+id/imageAscensorBarra2"
+        app:layout_constraintTop_toTopOf="@+id/imageAscensorBarra2"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/tres_lineas" />
+
+    <ImageView
+        android:layout_width="134dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="465dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginBottom="6dp"
+        android:onClick="salir"
+        app:layout_constraintBottom_toBottomOf="@+id/imageAscensorPlegable"
+        app:layout_constraintEnd_toEndOf="@+id/imageAscensorPlegable"
+        app:layout_constraintStart_toStartOf="@+id/imageAscensorPlegable"
+        app:layout_constraintTop_toTopOf="@+id/imageAscensorPlegable"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/boton_salir"
+        tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck,TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/imageAscensorDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageAscensor7"
+        app:layout_constraintEnd_toEndOf="@+id/imageAscensorPlegable"
+        app:layout_constraintStart_toStartOf="@+id/imageAscensorPlegable"
+        app:layout_constraintTop_toTopOf="@+id/imageAscensorPlegable" />
+
+    <ImageView
+        android:id="@+id/imageAscensor1"
+        android:layout_width="150dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="399dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginBottom="64dp"
+        android:onClick="recepcion"
+        app:layout_constraintBottom_toBottomOf="@+id/imageAscensorPlegable"
+        app:layout_constraintEnd_toEndOf="@+id/imageAscensorPlegable"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/imageAscensorPlegable"
+        app:layout_constraintTop_toTopOf="@+id/imageAscensorPlegable"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/recurso_107"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/imageAscensor2"
+        android:layout_width="150dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="349dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginBottom="113dp"
+        android:onClick="investigacion"
+        app:layout_constraintBottom_toBottomOf="@+id/imageAscensorPlegable"
+        app:layout_constraintEnd_toEndOf="@+id/imageAscensorPlegable"
+        app:layout_constraintStart_toStartOf="@+id/imageAscensorPlegable"
+        app:layout_constraintTop_toTopOf="@+id/imageAscensorPlegable"
+        app:srcCompat="@drawable/recurso_106"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/imageAscensor3"
+        android:layout_width="150dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginBottom="162dp"
+        android:onClick="innovacion"
+        app:layout_constraintBottom_toBottomOf="@+id/imageAscensorPlegable"
+        app:layout_constraintEnd_toEndOf="@+id/imageAscensorPlegable"
+        app:layout_constraintStart_toStartOf="@+id/imageAscensorPlegable"
+        app:layout_constraintTop_toTopOf="@+id/imageAscensorPlegable"
+        app:srcCompat="@drawable/recurso_105"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/imageAscensor4"
+        android:layout_width="150dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="249dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginBottom="212dp"
+        android:onClick="aprendizaje"
+        app:layout_constraintBottom_toBottomOf="@+id/imageAscensorPlegable"
+        app:layout_constraintEnd_toEndOf="@+id/imageAscensorPlegable"
+        app:layout_constraintStart_toStartOf="@+id/imageAscensorPlegable"
+        app:layout_constraintTop_toTopOf="@+id/imageAscensorPlegable"
+        app:srcCompat="@drawable/recurso_134"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/imageAscensor5"
+        android:layout_width="150dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="198dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginBottom="263dp"
+        android:onClick="finanzas"
+        app:layout_constraintBottom_toBottomOf="@+id/imageAscensorPlegable"
+        app:layout_constraintEnd_toEndOf="@+id/imageAscensorPlegable"
+        app:layout_constraintStart_toStartOf="@+id/imageAscensorPlegable"
+        app:layout_constraintTop_toTopOf="@+id/imageAscensorPlegable"
+        app:srcCompat="@drawable/recurso_103"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/imageAscensor6"
+        android:layout_width="150dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="149dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginBottom="313dp"
+        android:onClick="cocreacion"
+        app:layout_constraintBottom_toBottomOf="@+id/imageAscensorPlegable"
+        app:layout_constraintEnd_toEndOf="@+id/imageAscensorPlegable"
+        app:layout_constraintStart_toStartOf="@+id/imageAscensorPlegable"
+        app:layout_constraintTop_toTopOf="@+id/imageAscensorPlegable"
+        app:srcCompat="@drawable/recurso_102"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/imageAscensor7"
+        android:layout_width="150dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="101dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginBottom="360dp"
+        android:onClick="preguntas"
+        app:layout_constraintBottom_toBottomOf="@+id/imageAscensorPlegable"
+        app:layout_constraintEnd_toEndOf="@+id/imageAscensorPlegable"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageAscensorPlegable"
+        app:layout_constraintTop_toTopOf="@+id/imageAscensorPlegable"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/recurso_101"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

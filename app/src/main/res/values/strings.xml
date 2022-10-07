@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">IRAPP</string>
+
+
+    <!--VENTANA ESCOGE TU PERFIL-->
+    <string name="ImageViewSena">Esta Es La Imagen De Sena.</string>
+
+
+    <string name="TextViewCrearCuenta">CREAR CUENTA</string>
+
+    <string name="ButtonIniciarSesion">Iniciar sesión</string>
+    <string name="TextViewEresNuevo">¿Eres nuevo?</string>
+    <string name="TextViewRegistrateAqui">Regístrate aquí</string>
+    <string name="TextViewOlvidasteContrasena">¿Olvidaste tu contraseña?</string>
+    <string name="TextViewPulsarAqui">Pulsa aquí</string>
+
+
+    <string name="TextViewInfoProducto">Para el Festival de cine buscamos productor/productora de campo que esté dispuesto
+    a hacer parte de la manada. Necesitamos a alguien seguro, asertivo y que sepa trabajar en equipo.</string>
+    <string name="TextViewRequisitos">Requisitos:</string>
+    <string name="TextViewR1">Estudiante de 8-10 semestre.</string>
+    <string name="TextViewR2">Disponibilidad de 8 horas semanales.</string>
+    <string name="TextViewR3">Experiencia previa.</string>
+    <string name="TextViewR4">Trabajo remunerado</string>
+
+    <string name="TextViewEscoge">Escoge tu perfil</string>
+    <string name="title_activity_dnie">Dnie</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_prueba">Prueba</string>
+    <!-- Strings used for fragments for navigation -->
+
+
+</resources>

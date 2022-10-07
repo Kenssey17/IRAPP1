@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondomiespacio"
+    tools:context=".MiEspacio">
+
+
+    <ImageView
+        android:id="@+id/imageAscensorBarra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/barranegra" />
+
+    <ImageView
+        android:id="@+id/imageAscensorPerfil"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="42dp"
+        android:onClick="iniciarSesion"
+        app:layout_constraintBottom_toBottomOf="@+id/imageAscensorBarra"
+        app:layout_constraintStart_toStartOf="@+id/imageAscensorBarra"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/login"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+    <ImageView
+        android:id="@+id/imageAscensorChat"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="230dp"
+        android:layout_marginBottom="42dp"
+        android:onClick="contactenos"
+        app:layout_constraintBottom_toBottomOf="@+id/imageAscensorBarra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageAscensorPerfil"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mensaje"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="42dp"
+        android:onClick="miEspacio"
+        app:layout_constraintBottom_toBottomOf="@+id/imageAscensorBarra"
+        app:layout_constraintEnd_toStartOf="@+id/imageAscensorMenu"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageAscensorChat"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/estrella"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/imageAscensorMenu"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="63dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="45dp"
+        android:onClick="ascensor"
+        app:layout_constraintBottom_toBottomOf="@+id/imageAscensorBarra"
+        app:layout_constraintEnd_toEndOf="@+id/imageAscensorBarra"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/imageAscensorBarra"
+        app:layout_constraintStart_toStartOf="@+id/imageAscensorBarra"
+        app:layout_constraintTop_toTopOf="@+id/imageAscensorBarra"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/tres_lineas"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/textMiEspacio"
+        android:layout_width="152dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageAscensorBarra"
+        app:srcCompat="@drawable/recurso_73" />
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="Construccion"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/cuadronaranaj2"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="91dp"
+        android:layout_marginBottom="140dp"
+        android:onClick="Construccion"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageMiEspacioTablero"
+        app:layout_constraintVertical_bias="0.701"
+        app:srcCompat="@drawable/vasito"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/imageMiEspacioTablero"
+        android:layout_width="393dp"
+        android:layout_height="245dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textMiEspacio"
+        app:srcCompat="@drawable/cuadroazul" />
+
+    <ImageView
+        android:id="@+id/imageMiEspacioEvento1"
+        android:layout_width="75dp"
+        android:layout_height="92dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="52dp"
+        android:onClick="Construccion"
+        app:layout_constraintStart_toStartOf="@+id/imageMiEspacioTablero"
+        app:layout_constraintTop_toTopOf="@+id/imageMiEspacioTablero"
+        app:srcCompat="@drawable/cuadronaranja"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/imageMiEspacioEvento2"
+        android:layout_width="61dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageMiEspacioEvento3"
+        app:layout_constraintStart_toEndOf="@+id/imageMiEspacioEvento1"
+        app:layout_constraintTop_toTopOf="@+id/imageMiEspacioTablero"
+        app:srcCompat="@drawable/cuadrogris" />
+
+    <ImageView
+        android:id="@+id/imageMiEspacioEvento3"
+        android:layout_width="69dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageMiEspacioEvento2"
+        app:layout_constraintTop_toTopOf="@+id/imageMiEspacioTablero"
+        app:srcCompat="@drawable/cuadrogris" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="156dp"
+        android:layout_marginBottom="39dp"
+        android:onClick="Construccion"
+        app:layout_constraintBottom_toBottomOf="@+id/imageMiEspacioTablero"
+        app:layout_constraintEnd_toStartOf="@+id/imageMiEspacioUtil2"
+        app:layout_constraintStart_toStartOf="@+id/imageMiEspacioTablero"
+        app:layout_constraintTop_toTopOf="@+id/imageMiEspacioTablero"
+        app:srcCompat="@drawable/cuadroamarillo"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/imageMiEspacioUtil2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="168dp"
+        android:layout_marginEnd="243dp"
+        android:layout_marginBottom="27dp"
+        android:onClick="Construccion"
+        app:layout_constraintBottom_toBottomOf="@+id/imageMiEspacioTablero"
+        app:layout_constraintEnd_toEndOf="@+id/imageMiEspacioTablero"
+        app:layout_constraintTop_toTopOf="@+id/imageMiEspacioTablero"
+        app:srcCompat="@drawable/cuadronegro2"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="300dp"
+        android:text="Beta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textMiEspacio" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

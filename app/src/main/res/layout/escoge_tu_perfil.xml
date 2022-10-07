@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EscogeTuPerfil">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="660dp"
+        android:contentDescription="@string/ImageViewSena"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fondoescogeperfil" />
+
+
+    <ImageView
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:contentDescription="@string/ImageViewSena"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/dosarboles" />
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="70dp"
+        android:contentDescription="@string/ImageViewSena"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textMiEspacio"
+        app:srcCompat="@drawable/lineaamarilla" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="150dp"
+        android:contentDescription="@string/ImageViewSena"
+        android:onClick="RetoDelDia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:srcCompat="@drawable/estudiantesamarillo"
+        tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck,DuplicateSpeakableTextCheck" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="170dp"
+        android:contentDescription="@string/ImageViewSena"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:srcCompat="@drawable/estudiantes"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="110dp"
+        android:contentDescription="@string/ImageViewSena"
+        android:onClick="Construccion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10"
+        app:srcCompat="@drawable/investigadores"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9"
+        app:srcCompat="@drawable/emprendedoresicono" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="130dp"
+        android:onClick="Construccion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView12"
+        app:srcCompat="@drawable/emprendedores"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="160dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView11"
+        app:srcCompat="@drawable/investigadoresicono"
+        android:contentDescription="TODO" />
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="300dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mensajetipodeusuario" />
+
+    <TextView
+        android:id="@+id/textMiEspacio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/TextViewEscoge"
+        android:textColor="@color/gris"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
